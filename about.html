@@ -1,0 +1,31 @@
+<!-- HTML Page (e.g., index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Include Navbar -->
+    <header>
+        <div id="navbar-container">
+            <!-- Include the content of navbar.html here -->
+           
+        </div>
+    </header>
+
+   <script>
+        // load-navbar.js
+// Function to load navbar
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        // Insert the navbar content into the navbar-container div
+        document.getElementById('navbar-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error fetching navbar:', error));
+
+   </script>
+</body>
+</html>

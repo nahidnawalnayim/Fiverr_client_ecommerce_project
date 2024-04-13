@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        
+      <div>
+        <div id="circle-container" style="display: flex;gap: 10px; justify-content: center; ">
+            <div id="circle" style="background-color: white;" class="shadow-sm">
+                <img  id="circle_img" id="" src="./assets/taxact.webp" alt="">
+            </div>
+            <div id="circle" style="background-color: #f2a1b2;" class="shadow-sm">
+                <img  id="circle_img" src="./assets/pandora.webp" alt="" style="margin: 10px;">
+            </div>
+            <div id="circle">
+                <img  id="circle_img" src="./assets/finishline.webp" alt="">
+            </div>
+            <div id="circle">
+                <img  id="circle_img" src="./assets/puma.webp" alt="">
+            </div>
+            <div id="circle">
+                <img  id="circle_img" src="./assets/maurices.webp" alt="">
+            </div>
+            <div id="circle" style="background-color: white;" class="shadow-sm">
+                <img  id="circle_img" src="./assets/boohoo.webp" alt="" >
+            </div>
+            <div id="circle" style="background-color: white;" class="shadow-sm">
+                <img id="circle_img" src="./assets/charles.webp" alt="">
+            </div>
+            <div id="circle">
+                <img  id="circle_img" src="./assets/forever.webp" alt="">
+            </div>
+        </div>
+      </div>
+
+      <script>
+        const data= [
+            {images : './assets/taxact.webp'},
+            {images : './assets/pandora.webp'},
+            {images : './assets/finishline.webp'},
+            {images : './assets/puma.webp'},
+            {images : './assets/maurices.webp'},
+            {images : './assets/boohoo.webp'},
+            {images : './assets/charles.webp'},
+            {images : './assets/forever.webp'}
+        ]
+
+        // function generateCircles(data) {
+        //     let html = '';
+        //     data.forEach(item=>{
+        //         html+= `
+        //                 <div class="rounded-pill">
+        //                     <img  id="circle_img" src="${item.images}">
+                
+        //                     </div>
+        //         `
+        //     })
+        //     return html;
+        // }
+
+        const container = document.getElementById('circle-container')
+        container.innerHTML = generateCircles(data)
+</script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

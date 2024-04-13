@@ -1,0 +1,47 @@
+.navbar{
+    background-color: #741FA2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.nav-link{
+    color: white
+}
+
+#btn_nav{
+    background-color: #741FA2;
+    border: 0;
+    width: 160px;
+    height: 50px;
+    color: white;
+}
+#btn_chrome{
+    background-color: #741FA2;
+    border: 0;
+    width: 160px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+}
+
+#btn_nav:hover{
+    background-color: #8f21ca;
+    border: 1px solid white;
+}
+
+#circle-container:nth-child(2){
+  background-color: black;
+}
+#circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 136px;
+    height: 136px;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#circle_img{
+    margin: 10px;
+}
